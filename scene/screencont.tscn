@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cnyhg3ovd1mx3"]
+
+[ext_resource type="Script" uid="uid://cxb6skjx5l5t2" path="res://script/screencont.gd" id="1_6uloh"]
+
+[node name="screencont" type="Control" unique_id=1846038582]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6uloh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1294596044]
+modulate = Color(0.78431374, 0.57254905, 1, 0.8)
+layout_mode = 0
+offset_right = 1470.0
+offset_bottom = 1031.0
+
+[node name="Label" type="Label" parent="." unique_id=1591086618]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 131.0
+offset_right = 1227.0
+offset_bottom = 278.0
+theme_override_colors/font_color = Color(0.043137256, 0.2901961, 1, 1)
+theme_override_font_sizes/font_size = 52
+text = "YOU WANT TO KNOW CONTROLS? 
+  NEVER PLAYED A GAME DUMMY?"
+
+[node name="Label2" type="Label" parent="." unique_id=30077782]
+layout_mode = 0
+offset_left = 327.0
+offset_top = 339.0
+offset_right = 666.0
+offset_bottom = 486.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "NEVERMIND!
+- MOVE = WASD
+- JUST THAT DUMMY!"
+
+[node name="Button" type="Button" parent="." unique_id=301003972]
+layout_mode = 0
+offset_left = 553.0
+offset_top = 602.0
+offset_right = 963.0
+offset_bottom = 742.0
+theme_override_font_sizes/font_size = 96
+text = "BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

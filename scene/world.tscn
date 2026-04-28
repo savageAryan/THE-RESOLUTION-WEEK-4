@@ -842,13 +842,13 @@ z_index = 1
 position = Vector2(542, 287)
 
 [node name="text" type="Label" parent="player" unique_id=1600293650]
-offset_left = -109.0
+offset_left = -119.0
 offset_top = -25.0
-offset_right = 110.0
+offset_right = 117.0
 offset_bottom = -11.0
 theme_override_fonts/font = ExtResource("4_yur6x")
-theme_override_font_sizes/font_size = 11
-text = "TO GET IN HOME MY SCORE MUST BE 30"
+theme_override_font_sizes/font_size = 9
+text = "TO GET IN HOME MY SCORE MUST BE 30(before 1 min)"
 script = ExtResource("5_f345f")
 
 [node name="Panel" type="Panel" parent="player" unique_id=1266919907]

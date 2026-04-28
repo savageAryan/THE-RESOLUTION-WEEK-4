@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://mpb2qx03e4co"]
+
+[ext_resource type="Script" uid="uid://7hqt3ijym6u7" path="res://script/start.gd" id="1_pyxt3"]
+[ext_resource type="Texture2D" uid="uid://bwh8wf8fnuu5d" path="res://assets/godot rpg (DEBUG) 28-04-2026 20_10_34.png" id="2_gbpcu"]
+[ext_resource type="FontFile" uid="uid://2xwgsaw1rr5b" path="res://assets/Craft3D-Clean.otf" id="3_xmel7"]
+
+[node name="Control" type="Control" unique_id=356216301]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pyxt3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2143380322]
+modulate = Color(1, 1, 1, 0.7019608)
+layout_mode = 0
+offset_left = -135.0
+offset_top = -186.0
+offset_right = 1467.8003
+offset_bottom = 878.0
+texture = ExtResource("2_gbpcu")
+
+[node name="Button" type="Button" parent="." unique_id=940474727]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.99997
+offset_top = -139.0
+offset_right = -162.99997
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5.6208315, 3.7242775)
+text = "START GAME"
+
+[node name="Button2" type="Button" parent="." unique_id=521845217]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.99997
+offset_top = -5.0
+offset_right = -162.99997
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5.6208315, 3.7242775)
+text = "QUIT"
+
+[node name="Button3" type="Button" parent="." unique_id=1277336844]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -269.0
+offset_top = 130.0
+offset_right = -163.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5.6208315, 3.7242775)
+text = "CONTROLS?"
+
+[node name="Label" type="Label" parent="." unique_id=2137436192]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 36.0
+offset_right = 932.0
+offset_bottom = 131.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 12
+theme_override_constants/shadow_outline_size = 51
+theme_override_fonts/font = ExtResource("3_xmel7")
+theme_override_font_sizes/font_size = 100
+text = "BUNNY WORKER"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

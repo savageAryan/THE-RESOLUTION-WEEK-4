@@ -11,14 +11,13 @@ config_version=5
 [application]
 
 config/name="godot rpg"
-run/main_scene="uid://dljwkp65b3r0s"
+run/main_scene="uid://mpb2qx03e4co"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*uid://dnlbc1r1kw34"
-GlobalControl="*uid://dubw7xiueu1gd"
 
 [editor_plugins]
 

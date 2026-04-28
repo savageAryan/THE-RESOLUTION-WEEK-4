@@ -15,3 +15,6 @@ func _on_timer_timeout() -> void:
 	var m = int(total_time_in_sec / 60.0)
 	var s = total_time_in_sec - m * 60
 	$Label.text = '%02d:%02d' % [m, s]
+	
+	if total_time_in_sec == 60:
+		get_tree().change_scene_to_file('res://scene/loosescreen.tscn')

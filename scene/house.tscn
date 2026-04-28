@@ -983,6 +983,14 @@ frame_progress = 0.08528831
 position = Vector2(539, 358)
 shape = SubResource("CircleShape2D_3bjdp")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1678463072]
+visible = false
+modulate = Color(0, 0, 0, 1)
+offset_left = 208.0
+offset_top = 19.0
+offset_right = 928.0
+offset_bottom = 420.0
+
 [node name="player" parent="." unique_id=341901192 instance=ExtResource("4_qg36w")]
 position = Vector2(539, 330)
 
@@ -996,14 +1004,6 @@ script = ExtResource("6_qg36w")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bed" unique_id=390702044]
 position = Vector2(312, 54)
 shape = SubResource("CircleShape2D_52fq0")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1678463072]
-visible = false
-modulate = Color(0, 0, 0, 1)
-offset_left = 208.0
-offset_top = 19.0
-offset_right = 928.0
-offset_bottom = 420.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=81575205]
 libraries/ = SubResource("AnimationLibrary_66jkb")
@@ -1022,6 +1022,14 @@ offset_top = 223.0
 offset_right = 520.0
 offset_bottom = 254.0
 text = "QUIT"
+
+[node name="WINTEXT" type="Label" parent="." unique_id=857989176]
+visible = false
+offset_left = 388.0
+offset_top = 210.0
+offset_right = 553.0
+offset_bottom = 233.0
+text = "YOU WIN ,GOODBOY!"
 
 [connection signal="body_entered" from="door1" to="door1" method="_on_body_entered"]
 [connection signal="body_entered" from="bed" to="bed" method="_on_body_entered"]
