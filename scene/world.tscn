@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dljwkp65b3r0s"]
 
 [ext_resource type="Texture2D" uid="uid://dfon44oughawk" path="res://assets/Ext_10a_DEMO.png" id="1_pjass"]
+[ext_resource type="PackedScene" uid="uid://ce7i1feeq6gjc" path="res://scene/player.tscn" id="2_txmk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txmk2"]
 texture = ExtResource("1_pjass")
@@ -358,3 +359,9 @@ tile_set = SubResource("TileSet_w4qq1")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=895851810]
 tile_set = SubResource("TileSet_emkrx")
+
+[node name="player" parent="." unique_id=341901192 instance=ExtResource("2_txmk2")]
+position = Vector2(542, 287)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=522665998]
+zoom = Vector2(3, 3)
