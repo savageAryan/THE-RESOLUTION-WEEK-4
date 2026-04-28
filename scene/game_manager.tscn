@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dnlbc1r1kw34"]
+
+[ext_resource type="Script" uid="uid://dmtdvqogyk5ay" path="res://script/game_manager.gd" id="1_y6yp7"]
+[ext_resource type="AudioStream" uid="uid://bfh8tql0cfv5y" path="res://assets/xtremefreddy-game-music-loop-7-145285.mp3" id="2_3c3go"]
+
+[node name="GameManager" type="Node2D" unique_id=1769564424]
+script = ExtResource("1_y6yp7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1826247738]
+stream = ExtResource("2_3c3go")
+autoplay = true
